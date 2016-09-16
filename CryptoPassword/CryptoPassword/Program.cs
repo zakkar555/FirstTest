@@ -87,7 +87,9 @@ namespace CryptoPassword
             {
                 byte[] encrypted = Secure.EncryptString(original, aes.Key, aes.IV);
 
-
+                var str = Secure.DecryptString(encrypted, aes.Key, aes.IV);
+                Console.WriteLine(str);
+                Console.ReadKey();
             }
         }
     }
