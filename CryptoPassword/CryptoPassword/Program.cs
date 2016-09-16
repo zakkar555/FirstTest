@@ -12,7 +12,7 @@ namespace CryptoPassword
     {
         public static byte[] EncryptString(string dataStr, byte[] dataKey, byte[] dataIV)
         {
-            if(dataStr == null || dataStr.Length <= 0)
+            if (dataStr == null || dataStr.Length <= 0)
                 throw new ArgumentNullException("dataStr");
             if (dataKey == null || dataKey.Length <= 0)
                 throw new ArgumentNullException("dataKey");
@@ -49,7 +49,7 @@ namespace CryptoPassword
                 throw new ArgumentNullException("dataStr");
             if (dataKey == null || dataKey.Length <= 0)
                 throw new ArgumentNullException("dataKey");
-            if(dataIV == null || dataIV.Length <= 0)
+            if (dataIV == null || dataIV.Length <= 0)
                 throw new ArgumentNullException("dataIV");
 
             string decrypted;
